@@ -57,20 +57,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_nodejs20</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=25533&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fish-lsp-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_nodejs20" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_nodejs22</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=25533&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fish-lsp-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_nodejs22" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>osx_64_nodejs20</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=25533&branchName=main">
