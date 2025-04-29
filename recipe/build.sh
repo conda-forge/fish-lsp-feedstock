@@ -3,9 +3,9 @@
 set -o xtrace -o nounset -o pipefail -o errexit
 
 # Create package archive and install globally
-if [[ "${target_platform}" == "osx-arm64" ]]; then
-    export npm_config_arch="arm64"
-fi
+case "${target_platform}" in
+  osx-arm64|linux-aarch64) export npm_config_arch="arm64" ;;
+esac
 
 if [[ "${build_platform}" != "${target_platform}" ]]; then
     rm $PREFIX/bin/node
