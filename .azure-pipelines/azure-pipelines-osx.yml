@@ -14,6 +14,12 @@ jobs:
       osx_64_nodejs22:
         CONFIG: osx_64_nodejs22
         UPLOAD_PACKAGES: 'True'
+      osx_arm64_nodejs20:
+        CONFIG: osx_arm64_nodejs20
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_nodejs22:
+        CONFIG: osx_arm64_nodejs22
+        UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables: {}
 
