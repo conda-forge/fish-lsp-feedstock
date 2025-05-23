@@ -1,5 +1,5 @@
 context:
-  version: 1.0.8-4
+  version: "1.0.9-1"
 
 package:
   name: fish-lsp
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://registry.npmjs.org/fish-lsp/-/fish-lsp-${{ version }}.tgz
-  sha256: 5ab1efa4a3a28f97e934bf1dc7ba56347d6cbadd3817cbf3839e333108170597
+  sha256: c28799ee8b7e3a17b7892aa3f9d80ebe638313b9bce772ac364faee3ced5d43a
 
 build:
-  number: 1
+  number: 0
   skip: win
 
 requirements:
@@ -33,11 +33,11 @@ requirements:
 
 tests:
   - script:
-     - npm list -g fish-lsp
-     - fish-lsp --help
-     - fish-lsp --version
-     - "fish-lsp info | grep Version"
-     - fish-lsp info
+      - npm list -g fish-lsp
+      - fish-lsp --help
+      - fish-lsp --version
+      - "fish-lsp info | grep Version"
+      - fish-lsp info
 
 about:
   license: MIT
