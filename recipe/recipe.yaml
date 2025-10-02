@@ -1,5 +1,5 @@
 context:
-  version: "1.0.9-1"
+  version: "1.1.0"
 
 package:
   name: fish-lsp
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://registry.npmjs.org/fish-lsp/-/fish-lsp-${{ version }}.tgz
-  sha256: c28799ee8b7e3a17b7892aa3f9d80ebe638313b9bce772ac364faee3ced5d43a
+  sha256: 91ee7d7299130fd253057db9b83c312723b0b079798f34dafbc3282685278291
 
 build:
   number: 0
