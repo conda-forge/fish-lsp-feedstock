@@ -2,6 +2,8 @@
 
 set -o xtrace -o nounset -o pipefail -o errexit
 
+export PYTHON=${BUILD_PREFIX}/bin/python
+
 # Create package archive and install globally
 case "${target_platform}" in
   osx-arm64|linux-aarch64) export npm_config_arch="arm64" ;;

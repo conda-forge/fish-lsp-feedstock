@@ -1,5 +1,5 @@
 context:
-  version: "1.0.9-1"
+  version: "1.1.1"
 
 package:
   name: fish-lsp
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://registry.npmjs.org/fish-lsp/-/fish-lsp-${{ version }}.tgz
-  sha256: c28799ee8b7e3a17b7892aa3f9d80ebe638313b9bce772ac364faee3ced5d43a
+  sha256: 8cf14e16170a68bb95ece08c7de3d3f5d7fc93e906ed31ff31422f5d136ac7ca
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
     - nodejs
     - pnpm
     - pnpm-licenses
+    - python >=${{ python_min }}
     - sed
   host:
     - nodejs
