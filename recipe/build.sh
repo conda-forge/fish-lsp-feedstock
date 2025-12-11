@@ -2,6 +2,8 @@
 
 set -o xtrace -o nounset -o pipefail -o errexit
 
+export CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
+
 # Create package archive and install globally
 case "${target_platform}" in
   osx-arm64|linux-aarch64) export npm_config_arch="arm64" ;;
