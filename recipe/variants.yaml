@@ -1,6 +1,6 @@
 c_compiler_version:
   - if: osx
     then: 18
-cxx_compiler:
+cxx_compiler_version:
   - if: osx
     then: 18
