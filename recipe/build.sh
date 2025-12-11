@@ -2,7 +2,7 @@
 
 set -o xtrace -o nounset -o pipefail -o errexit
 
-export CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
+export PYTHON=${BUILD_PREFIX}/bin/python
 
 # Create package archive and install globally
 case "${target_platform}" in

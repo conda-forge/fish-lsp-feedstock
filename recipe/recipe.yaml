@@ -24,6 +24,7 @@ requirements:
     - nodejs
     - pnpm
     - pnpm-licenses
+    - python >=${{ python_min }}
     - sed
   host:
     - nodejs
