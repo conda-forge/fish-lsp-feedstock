@@ -15,9 +15,9 @@ channel_sources:
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- 18
+- clangxx
 cxx_compiler_version:
-- '19'
+- 18
 macos_machine:
 - x86_64-apple-darwin13.4.0
 nodejs:
