@@ -26,6 +26,7 @@ requirements:
     - pnpm-licenses
     - python >=${{ python_min }}
     - sed
+    - husky
   host:
     - nodejs
   run:
