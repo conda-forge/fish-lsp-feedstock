@@ -39,6 +39,12 @@ tests:
       - fish-lsp --version
       - "fish-lsp info | grep Version"
       - fish-lsp info
+      - fish-lsp info --time-only
+      - fish-lsp info --time-startup --no-warning
+      - fish-lsp complete | fish --no-execute
+      - fish-lsp env | fish --no-execute
+      - echo 'set -lx foo bar' | fish-lsp info --dump-parse-tree
+      - echo 'function myfunc; end' | fish-lsp info --dump-semantic-tokens
 
 about:
   license: MIT
