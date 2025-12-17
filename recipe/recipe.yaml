@@ -1,5 +1,5 @@
 context:
-  version: 1.0.8-4
+  version: 1.1.1
 
 package:
   name: fish-lsp
@@ -25,7 +25,7 @@ requirements:
     - pnpm
     - pnpm-licenses
     - sed
-    - python
+    - python >=${{ python_min }}
   host:
     - nodejs
   run:
@@ -39,6 +39,12 @@ tests:
      - fish-lsp --version
      - "fish-lsp info | grep Version"
      - fish-lsp info
+     - fish-lsp info --time-only
+     - fish-lsp info --time-startup --no-warning
+     - fish-lsp complete | fish --no-execute
+     - fish-lsp env | fish --no-execute
+     - echo 'set -lx foo bar' | fish-lsp info --dump-parse-tree
+     - echo 'function myfunc; end' | fish-lsp info --dump-semantic-tokens
 
 about:
   license: MIT
