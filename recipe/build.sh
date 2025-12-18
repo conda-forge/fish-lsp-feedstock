@@ -14,9 +14,6 @@ if [[ "${build_platform}" != "${target_platform}" ]]; then
     ln -s $BUILD_PREFIX/bin/node $PREFIX/bin/node
 fi
 
-# Do not use tree-sitter, not really needed
-jq 'del(.dependencies["tree-sitter"])' package.json > tmp && mv tmp package.json
-
 # Create package archive and install globally
 npm pack
 npm install -ddd --global ${SRC_DIR}/${PKG_NAME}-${PKG_VERSION//_/-}.tgz

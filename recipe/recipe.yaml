@@ -20,7 +20,6 @@ requirements:
     - ${{ compiler('cxx') }}
     - make
     - fish
-    - jq
     - nodejs
     - pnpm
     - pnpm-licenses
