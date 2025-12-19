@@ -2,9 +2,6 @@
 
 set -o xtrace -o nounset -o pipefail -o errexit
 
-# Do not use tree-sitter, not really needed
-jq 'del(.dependencies["tree-sitter"])' package.json > tmp && mv tmp package.json
-
 # Create package archive and install globally
 npm pack --ignore-scripts
 npm install -ddd --global --no-bin-links --build-from-source ${SRC_DIR}/${PKG_NAME}-${PKG_VERSION//_/-}.tgz
