@@ -10,21 +10,15 @@ source:
   sha256: 1579b9ff599a46fd9d1c276eec1b6d67dcc5cd45cb6637d776e7912794f2fa55
 
 build:
-  number: 0
-  skip: win
+  noarch: generic
+  number: 1
 
 requirements:
   build:
-    - ${{ stdlib('c') }}
-    - ${{ compiler('c') }}
-    - ${{ compiler('cxx') }}
-    - make
     - fish
     - nodejs
     - pnpm
     - pnpm-licenses
-    - python >=${{ python_min }}
-    - sed
     - husky
   host:
     - nodejs
