@@ -7,7 +7,7 @@ npm pack --ignore-scripts
 npm install -ddd --global --no-bin-links --build-from-source ${SRC_DIR}/${PKG_NAME}-${PKG_VERSION//_/-}.tgz
 
 # Create license report for dependencies
-pnpm install
+pnpm install --allow-build esbuild
 pnpm-licenses generate-disclaimer --prod --output-file=third-party-licenses.txt
 
 mkdir -p ${PREFIX}/bin
